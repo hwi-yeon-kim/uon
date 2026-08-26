@@ -39,20 +39,22 @@ node tests/main.test.js
 
 ## 배포 (GitHub Pages)
 
-GitHub Pages를 통해 사이트를 배포하려면 다음 단계를 따르세요.
+이 저장소(`https://github.com/hwi-yeon-kim/uon`)는 이미 GitHub에 푸시되어 있습니다.
 
-1. **저장소 생성**
-   - GitHub에 로그인하여 새로운 저장소를 생성합니다.
-   - 저장소 이름을 `<username>.github.io` 형식으로 만들어야 합니다. (`<username>`은 본인의 GitHub 계정명)
+1. **GitHub Pages 활성화**
+   - 저장소 페이지에서 **Settings → Pages**로 이동합니다.
+   - **Build and deployment** 항목의 **Source**를 `Deploy from a branch`로 설정합니다.
+   - **Branch**를 `main` / `/(root)`로 선택하고 저장합니다.
 
-2. **원격 저장소 연결 및 푸시**
-   - 아래 명령어를 실행하여 원격 저장소를 연결하고 코드를 올립니다. (`<username>`을 본인의 계정명으로 바꾸세요)
+2. **배포 확인**
+   - 몇 분 후 `https://hwi-yeon-kim.github.io/uon/`에 접속하면 배포된 사이트를 확인할 수 있습니다.
+   - 저장소 이름이 `<username>.github.io` 형식이 아니므로(project site), 사이트는 도메인 루트가 아닌 `/uon/` 경로 아래에 배포됩니다. 모든 경로가 상대 경로로 작성되어 있어 코드 수정 없이 정상 동작합니다.
+
+3. **변경 사항 반영**
+   - 이후 코드를 수정하면 다음 명령어로 반영합니다.
 
 ```bash
-git remote add origin https://github.com/<username>/<username>.github.io.git
-git branch -M main
-git push -u origin main
+git add .
+git commit -m "설명"
+git push
 ```
-
-3. **배포 확인**
-   - 몇 분 후 `https://<username>.github.io`에 접속하면 배포된 사이트를 확인할 수 있습니다.
