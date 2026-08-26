@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css');
 
 :root {
   --bg: #0a0a0a;
@@ -8,8 +8,8 @@
   --border: #262626;
   --accent-start: #3b5bfd;
   --accent-end: #a855f7;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
   --max-width: 1080px;
 }
 
@@ -68,7 +68,7 @@ img {
 }
 
 .hero__tagline {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(28px, 5vw, 48px);
   font-weight: 700;
   margin: 24px 0 12px;
@@ -106,7 +106,7 @@ img {
 }
 
 .projects__heading {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 28px;
   margin-bottom: 32px;
 }
@@ -150,7 +150,7 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 14px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -162,7 +162,7 @@ img {
 }
 
 .project-card__title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 20px;
   margin: 0 0 8px;
 }
@@ -227,7 +227,7 @@ img {
 }
 
 .case-study__title {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: clamp(32px, 5vw, 52px);
   font-weight: 700;
   color: var(--text);
@@ -288,7 +288,7 @@ img {
   border: 1px dashed var(--border);
   background: var(--bg-elevated);
   color: var(--text-muted);
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 16px;
   letter-spacing: 0.04em;
   margin: 0 0 56px;
@@ -301,7 +301,7 @@ img {
 }
 
 .case-study__section h2 {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   font-size: 28px;
   font-weight: 700;
   color: var(--text);
