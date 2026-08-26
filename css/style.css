@@ -69,7 +69,7 @@ img {
 
 .hero__tagline {
   font-family: var(--font-display);
-  font-size: clamp(28px, 5vw, 48px);
+  font-size: clamp(36px, 7vw, 64px);
   font-weight: 700;
   margin: 24px 0 12px;
 }
