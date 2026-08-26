@@ -1,7 +1,8 @@
 function projectCardHTML(project) {
+  const placeholderLabel = project.isPlaceholder ? 'Sample' : 'Coming soon';
   const thumb = project.thumbnail
     ? `<img src="${project.thumbnail}" alt="${project.title}" loading="lazy">`
-    : `<div class="project-card__thumb-placeholder">Sample</div>`;
+    : `<div class="project-card__thumb-placeholder">${placeholderLabel}</div>`;
 
   const tags = project.tags.map((tag) => `<li>${tag}</li>`).join('');
 

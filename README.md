@@ -18,7 +18,7 @@ python3 -m http.server 8000
 
 1. **프로젝트 데이터 추가**
    - `js/projects-data.js` 파일을 열고 `PROJECTS` 배열에 새로운 프로젝트 객체를 추가합니다.
-   - 필드: `title` (프로젝트명), `summary` (간단한 설명), `tags` (태그 배열), `thumbnail` (썸네일 이미지 경로), `href` (상세 페이지 링크), `isPlaceholder` (플레이스홀더 여부)
+   - 필드: `id` (고유 식별자), `title` (프로젝트명), `summary` (간단한 설명), `tags` (태그 배열), `thumbnail` (썸네일 이미지 경로), `href` (상세 페이지 링크), `isPlaceholder` (플레이스홀더 여부, true면 카드 썸네일에 "Sample" 표시)
 
 2. **상세 페이지 작성**
    - `projects/` 폴더에서 기존 프로젝트 페이지(예: `projects/sample-project-a.html`)를 복사합니다.
