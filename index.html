@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>u:on — Portfolio</title>
+  <meta name="description" content="u:on의 프로젝트를 모은 포트폴리오입니다.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <span class="logo-badge"><img src="assets/images/logo.png" alt="u:on"></span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__tagline">Weave the voices,<br><span class="accent-text">Simulate the future.</span></h1>
+      <p class="hero__subcopy">목소리를 데이터로 엮어 다음을 시뮬레이션하는 u:on의 작업들입니다.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <!-- 회사 소개 문구는 예시입니다. 실제 소개로 교체해주세요 -->
+      <p>u:on은 데이터와 이야기 사이의 신호를 발견하는 작은 스튜디오입니다. 여론 분석부터 인터랙티브 프로덕트까지, 목소리를 엮어 다음을 예측하는 작업을 함께합니다.</p>
+      <a class="about__contact" href="mailto:uon.data@gmail.com">uon.data@gmail.com</a>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h2 class="projects__heading">Projects</h2>
+      <div class="project-grid" id="project-grid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; 2026 u:on</span>
+      <a href="mailto:uon.data@gmail.com">uon.data@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    renderProjectGrid(PROJECTS, document.getElementById('project-grid'));
+  </script>
+</body>
+</html>
